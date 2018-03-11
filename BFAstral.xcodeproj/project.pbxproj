@@ -7,9 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14292E4020553CCF004AFAE8 /* ResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14292E3920553C6B004AFAE8 /* ResponseTests.swift */; };
+		14292E4220553CDB004AFAE8 /* BasicGetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14292E2820553C49004AFAE8 /* BasicGetRequest.swift */; };
+		14292E4320553CDB004AFAE8 /* BasicMultipartFormDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14292E2920553C49004AFAE8 /* BasicMultipartFormDataRequest.swift */; };
+		14292E4420553CDB004AFAE8 /* BasicPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14292E2A20553C49004AFAE8 /* BasicPostRequest.swift */; };
+		14292E4520553CDB004AFAE8 /* FormURLEncodedPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14292E2B20553C49004AFAE8 /* FormURLEncodedPostRequest.swift */; };
+		14292E4620553CE1004AFAE8 /* GetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14292E3120553C54004AFAE8 /* GetResponse.swift */; };
+		14292E4720553CE1004AFAE8 /* MultipartFormDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14292E3220553C54004AFAE8 /* MultipartFormDataResponse.swift */; };
+		14292E4820553CE1004AFAE8 /* FormURLEncodedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14292E3320553C54004AFAE8 /* FormURLEncodedResponse.swift */; };
+		14292E4920553CE1004AFAE8 /* PostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14292E3420553C54004AFAE8 /* PostResponse.swift */; };
+		14292E4A20553CE8004AFAE8 /* BasicConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14292E1F20553C33004AFAE8 /* BasicConfiguration.swift */; };
+		14292E4B20553CE8004AFAE8 /* FormURLEncodedConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14292E2020553C33004AFAE8 /* FormURLEncodedConfiguration.swift */; };
+		14292E4C20553CE8004AFAE8 /* MultipartConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14292E2120553C33004AFAE8 /* MultipartConfiguration.swift */; };
+		14292E4D20553D7B004AFAE8 /* BinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14292E3C20553C77004AFAE8 /* BinData.swift */; };
+		14292E4E20553D7B004AFAE8 /* BinHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14292E3D20553C77004AFAE8 /* BinHeaders.swift */; };
 		14393BC52052BC2F00AB57D2 /* BFAstral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14393BBB2052BC2F00AB57D2 /* BFAstral.framework */; };
 		14393BCA2052BC2F00AB57D2 /* BFAstralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14393BC92052BC2F00AB57D2 /* BFAstralTests.swift */; };
 		14393BCC2052BC2F00AB57D2 /* BFAstral.h in Headers */ = {isa = PBXBuildFile; fileRef = 14393BBE2052BC2F00AB57D2 /* BFAstral.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14393BE22052BE4400AB57D2 /* BFDispatcherType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14393BE12052BE4400AB57D2 /* BFDispatcherType.swift */; };
+		14393BE42052BF4C00AB57D2 /* BFDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14393BE32052BF4C00AB57D2 /* BFDispatcher.swift */; };
+		154BCA3E345C63FE0F60D88C /* Pods_BFAstralTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0176C0A5BC7F067163A1D3 /* Pods_BFAstralTests.framework */; };
+		9205A25B4B8B9469A81C23DA /* Pods_BFAstral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B347236CB4EBD4829BD96356 /* Pods_BFAstral.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +41,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14292E1F20553C33004AFAE8 /* BasicConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicConfiguration.swift; sourceTree = "<group>"; };
+		14292E2020553C33004AFAE8 /* FormURLEncodedConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormURLEncodedConfiguration.swift; sourceTree = "<group>"; };
+		14292E2120553C33004AFAE8 /* MultipartConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipartConfiguration.swift; sourceTree = "<group>"; };
+		14292E2820553C49004AFAE8 /* BasicGetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicGetRequest.swift; sourceTree = "<group>"; };
+		14292E2920553C49004AFAE8 /* BasicMultipartFormDataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicMultipartFormDataRequest.swift; sourceTree = "<group>"; };
+		14292E2A20553C49004AFAE8 /* BasicPostRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicPostRequest.swift; sourceTree = "<group>"; };
+		14292E2B20553C49004AFAE8 /* FormURLEncodedPostRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormURLEncodedPostRequest.swift; sourceTree = "<group>"; };
+		14292E3120553C54004AFAE8 /* GetResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetResponse.swift; sourceTree = "<group>"; };
+		14292E3220553C54004AFAE8 /* MultipartFormDataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipartFormDataResponse.swift; sourceTree = "<group>"; };
+		14292E3320553C54004AFAE8 /* FormURLEncodedResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormURLEncodedResponse.swift; sourceTree = "<group>"; };
+		14292E3420553C54004AFAE8 /* PostResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostResponse.swift; sourceTree = "<group>"; };
+		14292E3920553C6B004AFAE8 /* ResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseTests.swift; sourceTree = "<group>"; };
+		14292E3C20553C77004AFAE8 /* BinData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinData.swift; sourceTree = "<group>"; };
+		14292E3D20553C77004AFAE8 /* BinHeaders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinHeaders.swift; sourceTree = "<group>"; };
 		14393BBB2052BC2F00AB57D2 /* BFAstral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BFAstral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14393BBE2052BC2F00AB57D2 /* BFAstral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFAstral.h; sourceTree = "<group>"; };
 		14393BBF2052BC2F00AB57D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14393BC42052BC2F00AB57D2 /* BFAstralTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BFAstralTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14393BC92052BC2F00AB57D2 /* BFAstralTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFAstralTests.swift; sourceTree = "<group>"; };
 		14393BCB2052BC2F00AB57D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14393BD72052BCD000AB57D2 /* BFAstral.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BFAstral.podspec; sourceTree = "<group>"; };
+		14393BD92052BCE000AB57D2 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		14393BDB2052BCE900AB57D2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		14393BDD2052BCF900AB57D2 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		14393BDF2052BD0200AB57D2 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		14393BE12052BE4400AB57D2 /* BFDispatcherType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFDispatcherType.swift; sourceTree = "<group>"; };
+		14393BE32052BF4C00AB57D2 /* BFDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFDispatcher.swift; sourceTree = "<group>"; };
+		2630D35A9014F1EC50C85214 /* Pods-BFAstral.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstral.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstral/Pods-BFAstral.debug.xcconfig"; sourceTree = "<group>"; };
+		497A22A0020936CBF8B4AE84 /* Pods-BFAstralTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstralTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstralTests/Pods-BFAstralTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B347236CB4EBD4829BD96356 /* Pods_BFAstral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BFAstral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8291BCEB023F115D7C6608B /* Pods-BFAstral.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstral.release.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstral/Pods-BFAstral.release.xcconfig"; sourceTree = "<group>"; };
+		E8732F9112301B4AE018C256 /* Pods-BFAstralTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstralTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstralTests/Pods-BFAstralTests.release.xcconfig"; sourceTree = "<group>"; };
+		FB0176C0A5BC7F067163A1D3 /* Pods_BFAstralTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BFAstralTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9205A25B4B8B9469A81C23DA /* Pods_BFAstral.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +90,64 @@
 			buildActionMask = 2147483647;
 			files = (
 				14393BC52052BC2F00AB57D2 /* BFAstral.framework in Frameworks */,
+				154BCA3E345C63FE0F60D88C /* Pods_BFAstralTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14292E1E20553C33004AFAE8 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				14292E1F20553C33004AFAE8 /* BasicConfiguration.swift */,
+				14292E2020553C33004AFAE8 /* FormURLEncodedConfiguration.swift */,
+				14292E2120553C33004AFAE8 /* MultipartConfiguration.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		14292E2720553C49004AFAE8 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				14292E2820553C49004AFAE8 /* BasicGetRequest.swift */,
+				14292E2920553C49004AFAE8 /* BasicMultipartFormDataRequest.swift */,
+				14292E2A20553C49004AFAE8 /* BasicPostRequest.swift */,
+				14292E2B20553C49004AFAE8 /* FormURLEncodedPostRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		14292E3020553C54004AFAE8 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				14292E3120553C54004AFAE8 /* GetResponse.swift */,
+				14292E3220553C54004AFAE8 /* MultipartFormDataResponse.swift */,
+				14292E3320553C54004AFAE8 /* FormURLEncodedResponse.swift */,
+				14292E3420553C54004AFAE8 /* PostResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		14292E3B20553C77004AFAE8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				14292E3C20553C77004AFAE8 /* BinData.swift */,
+				14292E3D20553C77004AFAE8 /* BinHeaders.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		14393BB12052BC2F00AB57D2 = {
 			isa = PBXGroup;
 			children = (
-				14393BBD2052BC2F00AB57D2 /* BFAstral */,
+				14393BD62052BCB600AB57D2 /* Metadata */,
+				14393BBD2052BC2F00AB57D2 /* Sources */,
+				14393BD52052BC5C00AB57D2 /* Supporting Files */,
 				14393BC82052BC2F00AB57D2 /* BFAstralTests */,
 				14393BBC2052BC2F00AB57D2 /* Products */,
+				F4F0DF3E6669D2D9DDB120FC /* Pods */,
+				48E90913404F36E4D7E7061A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,13 +160,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		14393BBD2052BC2F00AB57D2 /* BFAstral */ = {
+		14393BBD2052BC2F00AB57D2 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				14393BBE2052BC2F00AB57D2 /* BFAstral.h */,
-				14393BBF2052BC2F00AB57D2 /* Info.plist */,
+				14393BE12052BE4400AB57D2 /* BFDispatcherType.swift */,
+				14393BE32052BF4C00AB57D2 /* BFDispatcher.swift */,
 			);
-			path = BFAstral;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		14393BC82052BC2F00AB57D2 /* BFAstralTests */ = {
@@ -84,6 +176,52 @@
 				14393BCB2052BC2F00AB57D2 /* Info.plist */,
 			);
 			path = BFAstralTests;
+			sourceTree = "<group>";
+		};
+		14393BD52052BC5C00AB57D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14292E1E20553C33004AFAE8 /* Configurations */,
+				14292E3020553C54004AFAE8 /* Responses */,
+				14292E2720553C49004AFAE8 /* Requests */,
+				14292E3B20553C77004AFAE8 /* Utilities */,
+				14292E3920553C6B004AFAE8 /* ResponseTests.swift */,
+				14393BBE2052BC2F00AB57D2 /* BFAstral.h */,
+				14393BBF2052BC2F00AB57D2 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14393BD62052BCB600AB57D2 /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				14393BD72052BCD000AB57D2 /* BFAstral.podspec */,
+				14393BD92052BCE000AB57D2 /* LICENSE */,
+				14393BDB2052BCE900AB57D2 /* Podfile */,
+				14393BDD2052BCF900AB57D2 /* Cartfile */,
+				14393BDF2052BD0200AB57D2 /* Package.swift */,
+			);
+			name = Metadata;
+			sourceTree = "<group>";
+		};
+		48E90913404F36E4D7E7061A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B347236CB4EBD4829BD96356 /* Pods_BFAstral.framework */,
+				FB0176C0A5BC7F067163A1D3 /* Pods_BFAstralTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4F0DF3E6669D2D9DDB120FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2630D35A9014F1EC50C85214 /* Pods-BFAstral.debug.xcconfig */,
+				D8291BCEB023F115D7C6608B /* Pods-BFAstral.release.xcconfig */,
+				497A22A0020936CBF8B4AE84 /* Pods-BFAstralTests.debug.xcconfig */,
+				E8732F9112301B4AE018C256 /* Pods-BFAstralTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +242,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14393BCF2052BC2F00AB57D2 /* Build configuration list for PBXNativeTarget "BFAstral" */;
 			buildPhases = (
+				792EE76C0BA116DAF5A52163 /* [CP] Check Pods Manifest.lock */,
 				14393BB62052BC2F00AB57D2 /* Sources */,
 				14393BB72052BC2F00AB57D2 /* Frameworks */,
 				14393BB82052BC2F00AB57D2 /* Headers */,
 				14393BB92052BC2F00AB57D2 /* Resources */,
+				D355056C72D5EB688B1966BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +262,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14393BD22052BC2F00AB57D2 /* Build configuration list for PBXNativeTarget "BFAstralTests" */;
 			buildPhases = (
+				19B27D72EB86162F5BC412AA /* [CP] Check Pods Manifest.lock */,
 				14393BC02052BC2F00AB57D2 /* Sources */,
 				14393BC12052BC2F00AB57D2 /* Frameworks */,
 				14393BC22052BC2F00AB57D2 /* Resources */,
+				31CF2326D426A38443B7105E /* [CP] Embed Pods Frameworks */,
+				B9BFC3B202C33560558EED82 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +291,7 @@
 				TargetAttributes = {
 					14393BBA2052BC2F00AB57D2 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					14393BC32052BC2F00AB57D2 = {
@@ -191,11 +335,104 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19B27D72EB86162F5BC412AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BFAstralTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31CF2326D426A38443B7105E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BFAstralTests/Pods-BFAstralTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Astral/Astral.framework",
+				"${BUILT_PRODUCTS_DIR}/BrightFutures/BrightFutures.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Astral.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BrightFutures.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BFAstralTests/Pods-BFAstralTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		792EE76C0BA116DAF5A52163 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BFAstral-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9BFC3B202C33560558EED82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BFAstralTests/Pods-BFAstralTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D355056C72D5EB688B1966BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BFAstral/Pods-BFAstral-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		14393BB62052BC2F00AB57D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14393BE42052BF4C00AB57D2 /* BFDispatcher.swift in Sources */,
+				14393BE22052BE4400AB57D2 /* BFDispatcherType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +440,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14292E4E20553D7B004AFAE8 /* BinHeaders.swift in Sources */,
+				14292E4420553CDB004AFAE8 /* BasicPostRequest.swift in Sources */,
+				14292E4020553CCF004AFAE8 /* ResponseTests.swift in Sources */,
+				14292E4B20553CE8004AFAE8 /* FormURLEncodedConfiguration.swift in Sources */,
+				14292E4720553CE1004AFAE8 /* MultipartFormDataResponse.swift in Sources */,
+				14292E4920553CE1004AFAE8 /* PostResponse.swift in Sources */,
+				14292E4D20553D7B004AFAE8 /* BinData.swift in Sources */,
+				14292E4A20553CE8004AFAE8 /* BasicConfiguration.swift in Sources */,
+				14292E4C20553CE8004AFAE8 /* MultipartConfiguration.swift in Sources */,
+				14292E4620553CE1004AFAE8 /* GetResponse.swift in Sources */,
+				14292E4320553CDB004AFAE8 /* BasicMultipartFormDataRequest.swift in Sources */,
+				14292E4520553CDB004AFAE8 /* FormURLEncodedPostRequest.swift in Sources */,
 				14393BCA2052BC2F00AB57D2 /* BFAstralTests.swift in Sources */,
+				14292E4220553CDB004AFAE8 /* BasicGetRequest.swift in Sources */,
+				14292E4820553CE1004AFAE8 /* FormURLEncodedResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +584,9 @@
 		};
 		14393BD02052BC2F00AB57D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2630D35A9014F1EC50C85214 /* Pods-BFAstral.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -341,12 +594,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = BFAstral/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = julioalorrosoftwaredev.BFAstral;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,7 +608,9 @@
 		};
 		14393BD12052BC2F00AB57D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8291BCEB023F115D7C6608B /* Pods-BFAstral.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -362,7 +618,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = BFAstral/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = julioalorrosoftwaredev.BFAstral;
@@ -375,7 +631,9 @@
 		};
 		14393BD32052BC2F00AB57D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 497A22A0020936CBF8B4AE84 /* Pods-BFAstralTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S886WPSL95;
 				INFOPLIST_FILE = BFAstralTests/Info.plist;
@@ -389,7 +647,9 @@
 		};
 		14393BD42052BC2F00AB57D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8732F9112301B4AE018C256 /* Pods-BFAstralTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S886WPSL95;
 				INFOPLIST_FILE = BFAstralTests/Info.plist;
