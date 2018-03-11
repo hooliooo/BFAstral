@@ -55,6 +55,7 @@
 		14292E3920553C6B004AFAE8 /* ResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseTests.swift; sourceTree = "<group>"; };
 		14292E3C20553C77004AFAE8 /* BinData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinData.swift; sourceTree = "<group>"; };
 		14292E3D20553C77004AFAE8 /* BinHeaders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinHeaders.swift; sourceTree = "<group>"; };
+		14292E4F205541F9004AFAE8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		14393BBB2052BC2F00AB57D2 /* BFAstral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BFAstral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14393BBE2052BC2F00AB57D2 /* BFAstral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFAstral.h; sourceTree = "<group>"; };
 		14393BBF2052BC2F00AB57D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -200,6 +201,7 @@
 				14393BDB2052BCE900AB57D2 /* Podfile */,
 				14393BDD2052BCF900AB57D2 /* Cartfile */,
 				14393BDF2052BD0200AB57D2 /* Package.swift */,
+				14292E4F205541F9004AFAE8 /* README.md */,
 			);
 			name = Metadata;
 			sourceTree = "<group>";

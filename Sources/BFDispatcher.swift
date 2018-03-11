@@ -13,8 +13,16 @@ import Result
 
 public typealias HTTPRequestResult = (Result<Response, NetworkingError>) -> Void
 
+/**
+ The BFDispatcher is an implementation of a BFDispatcherType that returns a Future<Response, NetworkingError>
+*/
 open class BFDispatcher: AstralRequestDispatcher, BFDispatcherType {
 
+    /**
+     Creates a URLSessionDataTask from the URLRequest and transforms the Data or Error from the completion handler
+     into a Response or NetworkingError. Returns a Future with a Response or NetworkingError.
+     - parameter request: The Request instance used to get the Future<Response, NetworkingError> instance.
+    */
     open func response(of request: Request) -> Future<Response, NetworkingError> {
 
         let runningTasks: [URLSessionTask] = self.tasks.filter { $0.state != URLSessionTask.State.running }
