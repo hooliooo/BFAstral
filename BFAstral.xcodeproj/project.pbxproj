@@ -450,10 +450,10 @@
 			projectRoot = "";
 			targets = (
 				14393BBA2052BC2F00AB57D2 /* BFAstral-iOS */,
-				14393BC32052BC2F00AB57D2 /* BFAstralTests */,
 				14292E8A20558B19004AFAE8 /* BFAstral-Mac */,
 				14292E9A20558C6A004AFAE8 /* BFAstral-tvOS */,
 				14292EAA20558D13004AFAE8 /* BFAstral-watchOS */,
+				14393BC32052BC2F00AB57D2 /* BFAstralTests */,
 			);
 		};
 /* End PBXProject section */
@@ -832,6 +832,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Debug;
 		};
@@ -857,6 +858,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Release;
 		};
