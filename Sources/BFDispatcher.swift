@@ -1,9 +1,7 @@
 //
-//  BFDispatcher.swift
 //  BFAstral
-//
-//  Created by Julio Miguel Alorro on 3/9/18.
-//  Copyright © 2018 Julio Alorro Software Development, Inc. All rights reserved.
+//  Copyright (c) 2018 Julio Miguel Alorro
+//  Licensed under the MIT license. See LICENSE file
 //
 
 import Foundation
