@@ -23,10 +23,10 @@ open class BFDispatcher: AstralRequestDispatcher, BFDispatcherType {
     */
     open func response(of request: Request) -> Future<Response, NetworkingError> {
 
-        let runningTasks: [URLSessionTask] = self.tasks.filter { $0.state != URLSessionTask.State.running }
-        self.removeTasks()
-
-        runningTasks.forEach(self.add)
+        self.tasks = self.tasks.filter {
+            $0.state == URLSessionTask.State.running ||
+            $0.state == URLSessionTask.State.suspended
+        }
 
         let isDebugMode: Bool = self.isDebugMode
         let method: String = request.method.stringValue
