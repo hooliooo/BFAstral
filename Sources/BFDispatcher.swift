@@ -30,7 +30,7 @@ open class BFDispatcher: AstralRequestDispatcher, BFDispatcherType {
 
     /**
      BFDispatcher is a type of RequestDispatcher that returns a Future<Response, NetworkingError> instance.
-     It leverages BrightFutures as the abstraction over asynchronous programming
+     It leverages BrightFutures as the abstraction over asynchronous programming.
      - parameter builder: The RequestBuilder used to create the URLRequest instance.
      - parameter isDebugMode: If true, will print out information related to the http network request.
     */
@@ -40,7 +40,9 @@ open class BFDispatcher: AstralRequestDispatcher, BFDispatcherType {
 
     /**
      Creates a URLSessionDataTask from the URLRequest and transforms the Data or Error from the completion handler
-     into a Response or NetworkingError. Returns a Future with a Response or NetworkingError.
+     into a Response or NetworkingError.
+
+     Returns a Future with a Response or NetworkingError.
      - parameter request: The Request instance used to get the Future<Response, NetworkingError> instance.
     */
     open func response(of request: Request) -> Future<Response, NetworkingError> {
