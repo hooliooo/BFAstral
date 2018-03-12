@@ -17,6 +17,28 @@ public typealias HTTPRequestResult = (Result<Response, NetworkingError>) -> Void
 open class BFDispatcher: AstralRequestDispatcher, BFDispatcherType {
 
     /**
+     BFDispatcher is a type of RequestDispatcher that returns a Future<Response, NetworkingError> instance.
+     It leverages BrightFutures as the abstraction over asynchronous programming
+     - parameter strategy: The DataStrategy used to create the httpBody of the URLRequest.
+       The RequestBuilder used is the BaseRequestBuilder. The default value is a JSONStrategy instance.
+     - parameter isDebugMode: If true, will print out information related to the http network request. If false, prints nothing.
+       Default value is true.
+    */
+    public init(strategy: DataStrategy = JSONStrategy(), isDebugMode: Bool = true) {
+        super.init(builder: BaseRequestBuilder(strategy: strategy), isDebugMode: isDebugMode)
+    }
+
+    /**
+     BFDispatcher is a type of RequestDispatcher that returns a Future<Response, NetworkingError> instance.
+     It leverages BrightFutures as the abstraction over asynchronous programming
+     - parameter builder: The RequestBuilder used to create the URLRequest instance.
+     - parameter isDebugMode: If true, will print out information related to the http network request.
+    */
+    public required init(builder: RequestBuilder, isDebugMode: Bool) {
+        super.init(builder: builder, isDebugMode: isDebugMode)
+    }
+
+    /**
      Creates a URLSessionDataTask from the URLRequest and transforms the Data or Error from the completion handler
      into a Response or NetworkingError. Returns a Future with a Response or NetworkingError.
      - parameter request: The Request instance used to get the Future<Response, NetworkingError> instance.
