@@ -23,15 +23,12 @@
 		14292E4E20553D7B004AFAE8 /* BinHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14292E3D20553C77004AFAE8 /* BinHeaders.swift */; };
 		14292E8D20558B19004AFAE8 /* BFDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14393BE32052BF4C00AB57D2 /* BFDispatcher.swift */; };
 		14292E8E20558B19004AFAE8 /* BFDispatcherType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14393BE12052BE4400AB57D2 /* BFDispatcherType.swift */; };
-		14292E9020558B19004AFAE8 /* Pods_BFAstral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B347236CB4EBD4829BD96356 /* Pods_BFAstral.framework */; };
 		14292E9220558B19004AFAE8 /* BFAstral.h in Headers */ = {isa = PBXBuildFile; fileRef = 14393BBE2052BC2F00AB57D2 /* BFAstral.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14292E9D20558C6A004AFAE8 /* BFDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14393BE32052BF4C00AB57D2 /* BFDispatcher.swift */; };
 		14292E9E20558C6A004AFAE8 /* BFDispatcherType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14393BE12052BE4400AB57D2 /* BFDispatcherType.swift */; };
-		14292EA020558C6A004AFAE8 /* Pods_BFAstral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B347236CB4EBD4829BD96356 /* Pods_BFAstral.framework */; };
 		14292EA220558C6A004AFAE8 /* BFAstral.h in Headers */ = {isa = PBXBuildFile; fileRef = 14393BBE2052BC2F00AB57D2 /* BFAstral.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14292EAD20558D13004AFAE8 /* BFDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14393BE32052BF4C00AB57D2 /* BFDispatcher.swift */; };
 		14292EAE20558D13004AFAE8 /* BFDispatcherType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14393BE12052BE4400AB57D2 /* BFDispatcherType.swift */; };
-		14292EB020558D13004AFAE8 /* Pods_BFAstral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B347236CB4EBD4829BD96356 /* Pods_BFAstral.framework */; };
 		14292EB220558D13004AFAE8 /* BFAstral.h in Headers */ = {isa = PBXBuildFile; fileRef = 14393BBE2052BC2F00AB57D2 /* BFAstral.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14393BC52052BC2F00AB57D2 /* BFAstral_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14393BBB2052BC2F00AB57D2 /* BFAstral_iOS.framework */; };
 		14393BCA2052BC2F00AB57D2 /* BFAstralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14393BC92052BC2F00AB57D2 /* BFAstralTests.swift */; };
@@ -41,7 +38,6 @@
 		154BCA3E345C63FE0F60D88C /* Pods_BFAstralTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0176C0A5BC7F067163A1D3 /* Pods_BFAstralTests.framework */; };
 		3EC5260A61F41D37E97D3C09 /* Pods_BFAstral_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF3FEF43D54555E0618AB7A /* Pods_BFAstral_Mac.framework */; };
 		62043B58666C94CD9345CCBD /* Pods_BFAstral_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED2B3BCAF238011C03726A2 /* Pods_BFAstral_iOS.framework */; };
-		9205A25B4B8B9469A81C23DA /* Pods_BFAstral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B347236CB4EBD4829BD96356 /* Pods_BFAstral.framework */; };
 		B8560C5A984199B983D6E20B /* Pods_BFAstral_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A166ADCD7E77A02B7A6EC7DA /* Pods_BFAstral_watchOS.framework */; };
 		D6FB622E37E1567D0055DC79 /* Pods_BFAstral_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6552C44F0D7DA0EDD2BF598 /* Pods_BFAstral_tvOS.framework */; };
 /* End PBXBuildFile section */
@@ -75,6 +71,7 @@
 		14292E9820558B19004AFAE8 /* BFAstral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BFAstral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14292EA820558C6A004AFAE8 /* BFAstral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BFAstral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14292EB820558D13004AFAE8 /* BFAstral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BFAstral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		143434602058CAA800A356BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		14393BBB2052BC2F00AB57D2 /* BFAstral_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BFAstral_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14393BBE2052BC2F00AB57D2 /* BFAstral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFAstral.h; sourceTree = "<group>"; };
 		14393BBF2052BC2F00AB57D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,7 +87,6 @@
 		14393BE32052BF4C00AB57D2 /* BFDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFDispatcher.swift; sourceTree = "<group>"; };
 		1ED2B3BCAF238011C03726A2 /* Pods_BFAstral_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BFAstral_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2139E2047DC4D9E1089FABBD /* Pods-BFAstral-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstral-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstral-tvOS/Pods-BFAstral-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		2630D35A9014F1EC50C85214 /* Pods-BFAstral.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstral.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstral/Pods-BFAstral.debug.xcconfig"; sourceTree = "<group>"; };
 		497A22A0020936CBF8B4AE84 /* Pods-BFAstralTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstralTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstralTests/Pods-BFAstralTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DA46E7B171580CEBFFE6D83 /* Pods-BFAstral-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstral-watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstral-watchOS/Pods-BFAstral-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5EDDC5C2985651AE32F5045A /* Pods-BFAstral-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstral-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstral-tvOS/Pods-BFAstral-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,7 +96,6 @@
 		C23F4C330A08ECC0D24BA24F /* Pods-BFAstral-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstral-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstral-iOS/Pods-BFAstral-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		C7C7F115F72B8B84D09463FF /* Pods-BFAstral-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstral-watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstral-watchOS/Pods-BFAstral-watchOS.release.xcconfig"; sourceTree = "<group>"; };
 		D50F90F2B7C35B80B2F23CFB /* Pods-BFAstral-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstral-Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstral-Mac/Pods-BFAstral-Mac.debug.xcconfig"; sourceTree = "<group>"; };
-		D8291BCEB023F115D7C6608B /* Pods-BFAstral.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstral.release.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstral/Pods-BFAstral.release.xcconfig"; sourceTree = "<group>"; };
 		E8732F9112301B4AE018C256 /* Pods-BFAstralTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstralTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstralTests/Pods-BFAstralTests.release.xcconfig"; sourceTree = "<group>"; };
 		EDF3FEF43D54555E0618AB7A /* Pods_BFAstral_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BFAstral_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A70A754E844CC15F3F6371 /* Pods-BFAstral-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstral-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstral-iOS/Pods-BFAstral-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -113,7 +108,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14292E9020558B19004AFAE8 /* Pods_BFAstral.framework in Frameworks */,
 				3EC5260A61F41D37E97D3C09 /* Pods_BFAstral_Mac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,7 +116,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14292EA020558C6A004AFAE8 /* Pods_BFAstral.framework in Frameworks */,
 				D6FB622E37E1567D0055DC79 /* Pods_BFAstral_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,7 +124,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14292EB020558D13004AFAE8 /* Pods_BFAstral.framework in Frameworks */,
 				B8560C5A984199B983D6E20B /* Pods_BFAstral_watchOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,7 +132,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9205A25B4B8B9469A81C23DA /* Pods_BFAstral.framework in Frameworks */,
 				62043B58666C94CD9345CCBD /* Pods_BFAstral_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +262,7 @@
 		48E90913404F36E4D7E7061A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				143434602058CAA800A356BF /* Foundation.framework */,
 				B347236CB4EBD4829BD96356 /* Pods_BFAstral.framework */,
 				FB0176C0A5BC7F067163A1D3 /* Pods_BFAstralTests.framework */,
 				EDF3FEF43D54555E0618AB7A /* Pods_BFAstral_Mac.framework */,
@@ -284,8 +276,6 @@
 		F4F0DF3E6669D2D9DDB120FC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2630D35A9014F1EC50C85214 /* Pods-BFAstral.debug.xcconfig */,
-				D8291BCEB023F115D7C6608B /* Pods-BFAstral.release.xcconfig */,
 				497A22A0020936CBF8B4AE84 /* Pods-BFAstralTests.debug.xcconfig */,
 				E8732F9112301B4AE018C256 /* Pods-BFAstralTests.release.xcconfig */,
 				D50F90F2B7C35B80B2F23CFB /* Pods-BFAstral-Mac.debug.xcconfig */,
@@ -653,9 +643,9 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BFAstralTests/Pods-BFAstralTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Astral/Astral.framework",
-				"${BUILT_PRODUCTS_DIR}/BrightFutures/BrightFutures.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Astral-iOS/Astral.framework",
+				"${BUILT_PRODUCTS_DIR}/BrightFutures-iOS/BrightFutures.framework",
+				"${BUILT_PRODUCTS_DIR}/Result-iOS/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (

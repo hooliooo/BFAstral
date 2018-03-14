@@ -1,5 +1,5 @@
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '9.3'
+
 
 def pods
     use_frameworks!
@@ -8,6 +8,7 @@ def pods
 end
 
 target 'BFAstral-iOS' do
+    platform :ios, '9.3'
     pods
 
     target 'BFAstralTests' do
@@ -18,13 +19,16 @@ target 'BFAstral-iOS' do
 end
 
 target 'BFAstral-Mac' do
+    platform :macos, '10.11'
     pods
 end
 
 target 'BFAstral-tvOS' do
+    platform :tvos, '11.0'
     pods
 end
 
 target 'BFAstral-watchOS' do
+    platform :watchos, '4.0'
     pods
 end

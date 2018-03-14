@@ -6,7 +6,7 @@
 //  Copyright © 2018 Julio Alorro Software Development, Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for BFAstral.
 FOUNDATION_EXPORT double BFAstralVersionNumber;
