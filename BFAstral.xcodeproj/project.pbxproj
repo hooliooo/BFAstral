@@ -80,7 +80,7 @@
 		14393BCB2052BC2F00AB57D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14393BD72052BCD000AB57D2 /* BFAstral.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BFAstral.podspec; sourceTree = "<group>"; };
 		14393BD92052BCE000AB57D2 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		14393BDB2052BCE900AB57D2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		14393BDB2052BCE900AB57D2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		14393BDD2052BCF900AB57D2 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		14393BDF2052BD0200AB57D2 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		14393BE12052BE4400AB57D2 /* BFDispatcherType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFDispatcherType.swift; sourceTree = "<group>"; };

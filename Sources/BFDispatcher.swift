@@ -55,10 +55,11 @@ open class BFDispatcher: AstralRequestDispatcher, BFDispatcherType {
         let isDebugMode: Bool = self.isDebugMode
         let method: String = request.method.stringValue
         let urlRequest: URLRequest = self.urlRequest(of: request)
+        let session: URLSession = self.session
 
         return Future(resolver: { [weak self] (callback: @escaping HTTPRequestResult) -> Void in
 
-            let task: URLSessionDataTask = BaseRequestDispatcher.session.dataTask(with: urlRequest) {
+            let task: URLSessionDataTask = session.dataTask(with: urlRequest) {
                 (data: Data?, response: URLResponse?, error: Error?) -> Void in
                 // swiftlint:disable:previous closure_parameter_position
 
