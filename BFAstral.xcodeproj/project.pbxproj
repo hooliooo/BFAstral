@@ -31,7 +31,6 @@
 		14292EAE20558D13004AFAE8 /* BFDispatcherType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14393BE12052BE4400AB57D2 /* BFDispatcherType.swift */; };
 		14292EB220558D13004AFAE8 /* BFAstral.h in Headers */ = {isa = PBXBuildFile; fileRef = 14393BBE2052BC2F00AB57D2 /* BFAstral.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14393BC52052BC2F00AB57D2 /* BFAstral_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14393BBB2052BC2F00AB57D2 /* BFAstral_iOS.framework */; };
-		14393BCA2052BC2F00AB57D2 /* BFAstralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14393BC92052BC2F00AB57D2 /* BFAstralTests.swift */; };
 		14393BCC2052BC2F00AB57D2 /* BFAstral.h in Headers */ = {isa = PBXBuildFile; fileRef = 14393BBE2052BC2F00AB57D2 /* BFAstral.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14393BE22052BE4400AB57D2 /* BFDispatcherType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14393BE12052BE4400AB57D2 /* BFDispatcherType.swift */; };
 		14393BE42052BF4C00AB57D2 /* BFDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14393BE32052BF4C00AB57D2 /* BFDispatcher.swift */; };
@@ -76,7 +75,6 @@
 		14393BBE2052BC2F00AB57D2 /* BFAstral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFAstral.h; sourceTree = "<group>"; };
 		14393BBF2052BC2F00AB57D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14393BC42052BC2F00AB57D2 /* BFAstralTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BFAstralTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		14393BC92052BC2F00AB57D2 /* BFAstralTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFAstralTests.swift; sourceTree = "<group>"; };
 		14393BCB2052BC2F00AB57D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14393BD72052BCD000AB57D2 /* BFAstral.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BFAstral.podspec; sourceTree = "<group>"; };
 		14393BD92052BCE000AB57D2 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -231,7 +229,6 @@
 				14292E2720553C49004AFAE8 /* Requests */,
 				14292E3B20553C77004AFAE8 /* Utilities */,
 				14292E3920553C6B004AFAE8 /* ResponseTests.swift */,
-				14393BC92052BC2F00AB57D2 /* BFAstralTests.swift */,
 				14393BCB2052BC2F00AB57D2 /* Info.plist */,
 			);
 			path = BFAstralTests;
@@ -337,7 +334,6 @@
 				14292E8F20558B19004AFAE8 /* Frameworks */,
 				14292E9120558B19004AFAE8 /* Headers */,
 				14292E9320558B19004AFAE8 /* Resources */,
-				14292E9420558B19004AFAE8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -357,7 +353,6 @@
 				14292E9F20558C6A004AFAE8 /* Frameworks */,
 				14292EA120558C6A004AFAE8 /* Headers */,
 				14292EA320558C6A004AFAE8 /* Resources */,
-				14292EA420558C6A004AFAE8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -377,7 +372,6 @@
 				14292EAF20558D13004AFAE8 /* Frameworks */,
 				14292EB120558D13004AFAE8 /* Headers */,
 				14292EB320558D13004AFAE8 /* Resources */,
-				14292EB420558D13004AFAE8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -397,7 +391,6 @@
 				14393BB72052BC2F00AB57D2 /* Frameworks */,
 				14393BB82052BC2F00AB57D2 /* Headers */,
 				14393BB92052BC2F00AB57D2 /* Resources */,
-				D355056C72D5EB688B1966BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -417,7 +410,6 @@
 				14393BC12052BC2F00AB57D2 /* Frameworks */,
 				14393BC22052BC2F00AB57D2 /* Resources */,
 				31CF2326D426A38443B7105E /* [CP] Embed Pods Frameworks */,
-				B9BFC3B202C33560558EED82 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -537,21 +529,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		14292E9420558B19004AFAE8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BFAstral-Mac/Pods-BFAstral-Mac-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		14292E9B20558C6A004AFAE8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -570,21 +547,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		14292EA420558C6A004AFAE8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BFAstral-tvOS/Pods-BFAstral-tvOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		14292EAB20558D13004AFAE8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -601,21 +563,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		14292EB420558D13004AFAE8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BFAstral-watchOS/Pods-BFAstral-watchOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		19B27D72EB86162F5BC412AA /* [CP] Check Pods Manifest.lock */ = {
@@ -676,36 +623,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B9BFC3B202C33560558EED82 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BFAstralTests/Pods-BFAstralTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D355056C72D5EB688B1966BC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BFAstral-iOS/Pods-BFAstral-iOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -761,7 +678,6 @@
 				14292E4620553CE1004AFAE8 /* GetResponse.swift in Sources */,
 				14292E4320553CDB004AFAE8 /* BasicMultipartFormDataRequest.swift in Sources */,
 				14292E4520553CDB004AFAE8 /* FormURLEncodedPostRequest.swift in Sources */,
-				14393BCA2052BC2F00AB57D2 /* BFAstralTests.swift in Sources */,
 				14292E4220553CDB004AFAE8 /* BasicGetRequest.swift in Sources */,
 				14292E4820553CE1004AFAE8 /* FormURLEncodedResponse.swift in Sources */,
 			);
