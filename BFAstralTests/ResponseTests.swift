@@ -2,7 +2,7 @@ import XCTest
 import BrightFutures
 import Result
 import Astral
-@testable import BFAstral
+@testable import BFAstral_iOS
 
 class ResponseTests: XCTestCase {
 
@@ -88,9 +88,17 @@ class ResponseTests: XCTestCase {
             .onSuccess { (response: GetResponse) -> Void in
 
                 XCTAssertTrue(response.url == dispatcher.urlRequest(of: request).url!)
-                XCTAssertTrue(response.args.this == request.parameters["this"]! as! String)
-                XCTAssertTrue(response.args.what == request.parameters["what"]! as! String)
-                XCTAssertTrue(response.args.why == request.parameters["why"]! as! String)
+
+                switch request.parameters {
+                    case .dict(let parameters):
+                        XCTAssertTrue(response.args.this == parameters["this"]! as! String)
+                        XCTAssertTrue(response.args.what == parameters["what"]! as! String)
+                        XCTAssertTrue(response.args.why == parameters["why"]! as! String)
+
+                    case .array, .none:
+                        XCTFail()
+                }
+
                 expectation.fulfill()
 
             }
@@ -127,9 +135,16 @@ class ResponseTests: XCTestCase {
             }
             .onSuccess { (response: PostResponse) -> Void in
                 XCTAssertTrue(response.url == dispatcher.urlRequest(of: request).url!)
-                XCTAssertTrue(response.json.this == request.parameters["this"]! as! String)
-                XCTAssertTrue(response.json.what == request.parameters["what"]! as! String)
-                XCTAssertTrue(response.json.why == request.parameters["why"]! as! String)
+                switch request.parameters {
+                    case .dict(let parameters):
+                        XCTAssertTrue(response.json.this == parameters["this"]! as! String)
+                        XCTAssertTrue(response.json.what == parameters["what"]! as! String)
+                        XCTAssertTrue(response.json.why == parameters["why"]! as! String)
+
+                    case .array, .none:
+                        XCTFail()
+                }
+
                 expectation.fulfill()
             }
             .onFailure { (error: NetworkingError) -> Void in
@@ -144,7 +159,7 @@ class ResponseTests: XCTestCase {
 
         let request: Request = FormURLEncodedPostRequest()
 
-        let dispatcher: BFDispatcher = BFDispatcher(builder: BaseRequestBuilder(strategy: FormURLEncodedStrategy()))
+        let dispatcher: BFDispatcher = BFDispatcher(strategy:  FormURLEncodedStrategy())
 
         dispatcher.response(of: request)
             .map { (response: Response) -> FormURLEncodedResponse in
@@ -158,10 +173,20 @@ class ResponseTests: XCTestCase {
                 }
             }
             .onSuccess { (response: FormURLEncodedResponse) -> Void in
+
                 XCTAssertTrue(response.url == dispatcher.urlRequest(of: request).url!)
-                XCTAssertTrue(response.form.this == request.parameters["this"]! as! String)
-                XCTAssertTrue(response.form.what == request.parameters["what"]! as! String)
-                XCTAssertTrue(response.form.why == request.parameters["why"]! as! String)
+
+                switch request.parameters {
+                    case .dict(let parameters):
+                        XCTAssertTrue(response.form.this == parameters["this"]! as! String)
+                        XCTAssertTrue(response.form.what == parameters["what"]! as! String)
+                        XCTAssertTrue(response.form.why == parameters["why"]! as! String)
+
+                    case .array, .none:
+                        XCTFail()
+                }
+
+
                 expectation.fulfill()
             }
             .onFailure { (error: NetworkingError) -> Void in
@@ -194,9 +219,17 @@ class ResponseTests: XCTestCase {
             }
             .onSuccess { (response: MultipartFormDataResponse) -> Void in
                 XCTAssertTrue(response.url == dispatcher.urlRequest(of: request).url!)
-                XCTAssertTrue(response.form.this == request.parameters["this"]! as! String)
-                XCTAssertTrue(response.form.what == request.parameters["what"]! as! String)
-                XCTAssertTrue(response.form.why == request.parameters["why"]! as! String)
+
+                switch request.parameters {
+                    case .dict(let parameters):
+                        XCTAssertTrue(response.form.this == parameters["this"]! as! String)
+                        XCTAssertTrue(response.form.what == parameters["what"]! as! String)
+                        XCTAssertTrue(response.form.why == parameters["why"]! as! String)
+
+                    case .array, .none:
+                        XCTFail()
+                }
+
                 XCTAssertFalse(response.files.isEmpty)
                 expectation.fulfill()
             }

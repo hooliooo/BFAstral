@@ -24,7 +24,7 @@ open class BFDispatcher: AstralRequestDispatcher, BFDispatcherType {
      - parameter isDebugMode: If true, will print out information related to the http network request. If false, prints nothing.
        Default value is true.
     */
-    public init(strategy: DataStrategy = JSONStrategy(kind: JSONStrategy.Kind.dict), isDebugMode: Bool = true) {
+    public init(strategy: DataStrategy = JSONStrategy(), isDebugMode: Bool = true) {
         super.init(builder: BaseRequestBuilder(strategy: strategy), isDebugMode: isDebugMode)
     }
 
@@ -34,7 +34,7 @@ open class BFDispatcher: AstralRequestDispatcher, BFDispatcherType {
      - parameter builder: The RequestBuilder used to create the URLRequest instance.
      - parameter isDebugMode: If true, will print out information related to the http network request.
     */
-    public required init(builder: RequestBuilder, isDebugMode: Bool) {
+    public required init(builder: RequestBuilder, isDebugMode: Bool = true) {
         super.init(builder: builder, isDebugMode: isDebugMode)
     }
 
