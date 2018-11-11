@@ -17,7 +17,6 @@ import protocol Astral.Request
 import struct Astral.JSONResponse
 import class BrightFutures.Future
 
-
 public typealias HTTPRequestResult = (Result<Response, NetworkingError>) -> Void
 
 /**
