@@ -4,9 +4,9 @@
 //  Licensed under the MIT license. See LICENSE file
 //
 
-import Foundation
-import Astral
-import BrightFutures
+import protocol Astral.RequestDispatcher
+import protocol Astral.Request
+import class BrightFutures.Future
 
 /**
  The BFDispatcherType type is a type of RequestDispatcher that uses BrightFutures to return a Future instance.

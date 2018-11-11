@@ -4,10 +4,19 @@
 //  Licensed under the MIT license. See LICENSE file
 //
 
-import Foundation
-import Astral
+import class Foundation.URLSessionTask
+import enum Result.Result
+import protocol Astral.Response
+import enum Astral.NetworkingError
+import class Astral.AstralRequestDispatcher
+import protocol Astral.DataStrategy
+import struct Astral.JSONStrategy
+import struct Astral.BaseRequestBuilder
+import protocol Astral.RequestBuilder
+import protocol Astral.Request
+import struct Astral.JSONResponse
 import BrightFutures
-import Result
+
 
 public typealias HTTPRequestResult = (Result<Response, NetworkingError>) -> Void
 
