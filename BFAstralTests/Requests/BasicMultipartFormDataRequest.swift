@@ -27,25 +27,25 @@ struct BasicMultipartFormDataRequest: MultiPartFormDataRequest {
 
     var headers: Set<Header> {
         return [
-            Header(key: Header.Field.custom("Get-Request"), value: Header.Value.custom("Yes")),
-            Header(key: Header.Field.contentType, value: Header.Value.mediaType(MediaType.multipartFormData(self.boundary)))
+            Header(key: Header.Key.custom("Get-Request"), value: Header.Value.custom("Yes")),
+            Header(key: Header.Key.contentType, value: Header.Value.mediaType(MediaType.multipartFormData(Astral.shared.boundary)))
         ]
     }
 
-    let boundary: String = UUID().uuidString
+    let fileName: String = "Sample"
 
-    let files: [FormFile] = [
-        FormFile(
+    let components: [MultiPartFormDataComponent] = [
+        MultiPartFormDataComponent(
             name: "file1",
             fileName: "image1.png",
             contentType: "image/png",
-            data: Data()
+            file: MultiPartFormDataComponent.File.data(Data())
         ),
-        FormFile(
+        MultiPartFormDataComponent(
             name: "file2",
             fileName: "image2.png",
             contentType: "image/png",
-            data: Data()
+            file: MultiPartFormDataComponent.File.data(Data())
         )
     ]
 }

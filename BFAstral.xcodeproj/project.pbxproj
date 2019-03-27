@@ -409,6 +409,7 @@
 				14393BC02052BC2F00AB57D2 /* Sources */,
 				14393BC12052BC2F00AB57D2 /* Frameworks */,
 				14393BC22052BC2F00AB57D2 /* Resources */,
+				F7F1FAF8B7F0222AFDAAF780 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -431,12 +432,15 @@
 				ORGANIZATIONNAME = "Julio Alorro Software Development, Inc.";
 				TargetAttributes = {
 					14292E8A20558B19004AFAE8 = {
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					14292E9A20558C6A004AFAE8 = {
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					14292EAA20558D13004AFAE8 = {
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					14393BBA2052BC2F00AB57D2 = {
@@ -601,6 +605,32 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F7F1FAF8B7F0222AFDAAF780 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BFAstralTests/Pods-BFAstralTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Astral-iOS11.2/Astral.framework",
+				"${BUILT_PRODUCTS_DIR}/BrightFutures-iOS11.2/BrightFutures.framework",
+				"${BUILT_PRODUCTS_DIR}/Result-iOS11.2/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Astral.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BrightFutures.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BFAstralTests/Pods-BFAstralTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -694,7 +724,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -720,7 +750,7 @@
 				PRODUCT_NAME = BFAstral;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -746,7 +776,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.0;
 			};
@@ -772,7 +802,7 @@
 				PRODUCT_NAME = BFAstral;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.0;
 			};
@@ -799,7 +829,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
@@ -825,7 +855,7 @@
 				PRODUCT_NAME = BFAstral;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};

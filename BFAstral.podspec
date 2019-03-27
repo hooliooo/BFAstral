@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'BFAstral'
   s.module_name      = 'BFAstral'
-  s.version          = '1.1.2'
+  s.version          = '1.2.0'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
 
   s.summary          = 'An extension to Astral that uses BrightFutures as the abstraction of asynchronous programming'
@@ -30,5 +30,5 @@ Pod::Spec.new do |s|
   s.dependency 'Astral'
   s.dependency 'BrightFutures'
 
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
 end

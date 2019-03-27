@@ -8,10 +8,10 @@ import class Foundation.URLSessionTask
 import enum Result.Result
 import protocol Astral.Response
 import enum Astral.NetworkingError
-import class Astral.AstralRequestDispatcher
+import class Astral.BaseRequestDispatcher
 import protocol Astral.DataStrategy
 import struct Astral.JSONStrategy
-import struct Astral.BaseRequestBuilder
+import struct Astral.BaseHTTPBodyRequestBuilder
 import protocol Astral.RequestBuilder
 import protocol Astral.Request
 import struct Astral.JSONResponse
@@ -22,7 +22,8 @@ public typealias HTTPRequestResult = (Result<Response, NetworkingError>) -> Void
 /**
  The BFDispatcher is an implementation of a BFDispatcherType that returns a Future<Response, NetworkingError>
 */
-open class BFDispatcher: AstralRequestDispatcher, BFDispatcherType {
+//open class BFDispatcher: AstralRequestDispatcher, BFDispatcherType {
+open class BFDispatcher: BaseRequestDispatcher, BFDispatcherType {
 
     /**
      BFDispatcher is a type of RequestDispatcher that returns a Future<Response, NetworkingError> instance.
@@ -33,17 +34,7 @@ open class BFDispatcher: AstralRequestDispatcher, BFDispatcherType {
        Default value is true.
     */
     public init(strategy: DataStrategy = JSONStrategy(), isDebugMode: Bool = true) {
-        super.init(builder: BaseRequestBuilder(strategy: strategy), isDebugMode: isDebugMode)
-    }
-
-    /**
-     BFDispatcher is a type of RequestDispatcher that returns a Future<Response, NetworkingError> instance.
-     It leverages BrightFutures as the abstraction over asynchronous programming.
-     - parameter builder: The RequestBuilder used to create the URLRequest instance.
-     - parameter isDebugMode: If true, will print out information related to the http network request.
-    */
-    public required init(builder: RequestBuilder, isDebugMode: Bool = true) {
-        super.init(builder: builder, isDebugMode: isDebugMode)
+        super.init(builder: BaseHTTPBodyRequestBuilder(strategy: strategy), isDebugMode: isDebugMode)
     }
 
     /**
@@ -55,82 +46,23 @@ open class BFDispatcher: AstralRequestDispatcher, BFDispatcherType {
     */
     open func response(of request: Request) -> Future<Response, NetworkingError> {
 
-        self.tasks = self.tasks.filter {
-            $0.state == URLSessionTask.State.running ||
-            $0.state == URLSessionTask.State.suspended
-        }
-
-        let isDebugMode: Bool = self.isDebugMode
-        let method: String = request.method.stringValue
-        let urlRequest: URLRequest = self.urlRequest(of: request)
-        let session: URLSession = self.session
-
         return Future(resolver: { [weak self] (callback: @escaping HTTPRequestResult) -> Void in
 
-            let task: URLSessionDataTask = session.dataTask(with: urlRequest) {
-                (data: Data?, response: URLResponse?, error: Error?) -> Void in
-                // swiftlint:disable:previous closure_parameter_position
-
-                if let error = error {
-
+            self?.response(
+                of: request,
+                onSuccess: { (response: Response) -> Void in
                     callback(
-                        Result.failure(
-                            NetworkingError.connection(error)
+                        Result.success(
+                            response
                         )
                     )
-
-                } else if let data = data, let response = response as? HTTPURLResponse {
-
-                    switch isDebugMode {
-                        case true:
-                            print("HTTP Method: \(method)")
-                            print("Response: \(response)")
-
-                        case false:
-                            break
-                    }
-
-                    switch response.statusCode {
-                        case 200...399:
-                            callback(
-                                Result.success(
-                                    JSONResponse(httpResponse: response, data: data)
-                                )
-                            )
-
-                        case 400...599:
-                            callback(
-                                Result.failure(
-                                    NetworkingError.response(
-                                        JSONResponse(httpResponse: response, data: data)
-                                    )
-                                )
-                            )
-
-                        default:
-                            callback(
-                                Result.failure(
-                                    NetworkingError.unknownResponse(
-                                        JSONResponse(httpResponse: response, data: data),
-                                        "Unhandled status code: \(response.statusCode)"
-                                    )
-                                )
-                            )
-                    }
-                } else {
-
+                },
+                onFailure: { (error: NetworkingError) -> Void in
                     callback(
-                        Result.failure(
-                            NetworkingError.unknown("Unknown error occured")
-                        )
+                        Result.failure(error)
                     )
-
-                }
-            }
-
-            task.resume()
-
-            self?.add(task: task)
+                }, onComplete: {}
+            )
         })
     }
 

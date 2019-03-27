@@ -10,12 +10,6 @@ end
 target 'BFAstral-iOS' do
     platform :ios, '9.3'
     pods
-
-    target 'BFAstralTests' do
-        inherit! :search_paths
-        # Pods for testing
-    end
-
 end
 
 target 'BFAstral-Mac' do
@@ -30,5 +24,9 @@ end
 
 target 'BFAstral-watchOS' do
     platform :watchos, '4.0'
+    pods
+end
+
+target 'BFAstralTests' do
     pods
 end

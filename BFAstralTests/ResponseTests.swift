@@ -50,7 +50,7 @@ class ResponseTests: XCTestCase {
 
                 let accept: Header = request.headers.filter { $0.key == .accept }.first!
                 let contentType: Header = request.headers.filter { $0.key == .contentType }.first!
-                let custom: Header = request.headers.filter { $0.key == Header.Field.custom("Get-Request") }.first!
+                let custom: Header = request.headers.filter { $0.key == Header.Key.custom("Get-Request") }.first!
 
                 XCTAssertTrue(response.headers.accept == accept.value.stringValue)
                 XCTAssertTrue(response.headers.contentType == contentType.value.stringValue)
@@ -203,7 +203,7 @@ class ResponseTests: XCTestCase {
         let request: MultiPartFormDataRequest = BasicMultipartFormDataRequest()
 
         let dispatcher: BFDispatcher = BFDispatcher(
-            builder: BaseRequestBuilder(strategy: MultiPartFormDataStrategy(request: request))
+            strategy: MultiPartFormDataStrategy()
         )
 
         dispatcher.response(of: request)
