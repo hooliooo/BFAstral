@@ -5,7 +5,6 @@
 //
 
 import class Foundation.URLSessionTask
-import enum Result.Result
 import protocol Astral.Response
 import enum Astral.NetworkingError
 import class Astral.BaseRequestDispatcher
@@ -47,21 +46,20 @@ open class BFDispatcher: BaseRequestDispatcher, BFDispatcherType {
     open func response(of request: Request) -> Future<Response, NetworkingError> {
 
         return Future(resolver: { [weak self] (callback: @escaping HTTPRequestResult) -> Void in
-
             self?.response(
                 of: request,
-                onSuccess: { (response: Response) -> Void in
-                    callback(
-                        Result.success(
-                            response
-                        )
-                    )
-                },
-                onFailure: { (error: NetworkingError) -> Void in
-                    callback(
-                        Result.failure(error)
-                    )
-                }, onComplete: {}
+                onComplete: { (result: Result<Response, NetworkingError>) -> Void in
+                    switch result {
+                        case .success(let response):
+                            callback(
+                                Result<Response, NetworkingError>.success(
+                                    response
+                                )
+                            )
+                        case .failure(let error):
+                            callback(Result<Response, NetworkingError>.failure(error))
+                    }
+                }
             )
         })
     }

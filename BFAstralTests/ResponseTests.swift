@@ -1,6 +1,5 @@
 import XCTest
 import BrightFutures
-import Result
 import Astral
 @testable import BFAstral_iOS
 

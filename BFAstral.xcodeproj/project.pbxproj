@@ -27,9 +27,6 @@
 		14292E9D20558C6A004AFAE8 /* BFDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14393BE32052BF4C00AB57D2 /* BFDispatcher.swift */; };
 		14292E9E20558C6A004AFAE8 /* BFDispatcherType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14393BE12052BE4400AB57D2 /* BFDispatcherType.swift */; };
 		14292EA220558C6A004AFAE8 /* BFAstral.h in Headers */ = {isa = PBXBuildFile; fileRef = 14393BBE2052BC2F00AB57D2 /* BFAstral.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14292EAD20558D13004AFAE8 /* BFDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14393BE32052BF4C00AB57D2 /* BFDispatcher.swift */; };
-		14292EAE20558D13004AFAE8 /* BFDispatcherType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14393BE12052BE4400AB57D2 /* BFDispatcherType.swift */; };
-		14292EB220558D13004AFAE8 /* BFAstral.h in Headers */ = {isa = PBXBuildFile; fileRef = 14393BBE2052BC2F00AB57D2 /* BFAstral.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14393BC52052BC2F00AB57D2 /* BFAstral_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14393BBB2052BC2F00AB57D2 /* BFAstral_iOS.framework */; };
 		14393BCC2052BC2F00AB57D2 /* BFAstral.h in Headers */ = {isa = PBXBuildFile; fileRef = 14393BBE2052BC2F00AB57D2 /* BFAstral.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14393BE22052BE4400AB57D2 /* BFDispatcherType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14393BE12052BE4400AB57D2 /* BFDispatcherType.swift */; };
@@ -37,7 +34,6 @@
 		154BCA3E345C63FE0F60D88C /* Pods_BFAstralTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0176C0A5BC7F067163A1D3 /* Pods_BFAstralTests.framework */; };
 		3EC5260A61F41D37E97D3C09 /* Pods_BFAstral_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF3FEF43D54555E0618AB7A /* Pods_BFAstral_Mac.framework */; };
 		62043B58666C94CD9345CCBD /* Pods_BFAstral_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED2B3BCAF238011C03726A2 /* Pods_BFAstral_iOS.framework */; };
-		B8560C5A984199B983D6E20B /* Pods_BFAstral_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A166ADCD7E77A02B7A6EC7DA /* Pods_BFAstral_watchOS.framework */; };
 		D6FB622E37E1567D0055DC79 /* Pods_BFAstral_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6552C44F0D7DA0EDD2BF598 /* Pods_BFAstral_tvOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,7 +65,6 @@
 		14292E4F205541F9004AFAE8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		14292E9820558B19004AFAE8 /* BFAstral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BFAstral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14292EA820558C6A004AFAE8 /* BFAstral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BFAstral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		14292EB820558D13004AFAE8 /* BFAstral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BFAstral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		143434602058CAA800A356BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		14393BBB2052BC2F00AB57D2 /* BFAstral_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BFAstral_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14393BBE2052BC2F00AB57D2 /* BFAstral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFAstral.h; sourceTree = "<group>"; };
@@ -86,13 +81,11 @@
 		1ED2B3BCAF238011C03726A2 /* Pods_BFAstral_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BFAstral_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2139E2047DC4D9E1089FABBD /* Pods-BFAstral-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstral-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstral-tvOS/Pods-BFAstral-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		497A22A0020936CBF8B4AE84 /* Pods-BFAstralTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstralTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstralTests/Pods-BFAstralTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DA46E7B171580CEBFFE6D83 /* Pods-BFAstral-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstral-watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstral-watchOS/Pods-BFAstral-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5EDDC5C2985651AE32F5045A /* Pods-BFAstral-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstral-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstral-tvOS/Pods-BFAstral-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		A166ADCD7E77A02B7A6EC7DA /* Pods_BFAstral_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BFAstral_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B347236CB4EBD4829BD96356 /* Pods_BFAstral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BFAstral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23229D5AB52D7F4D236E5E7 /* Pods-BFAstral-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstral-Mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstral-Mac/Pods-BFAstral-Mac.release.xcconfig"; sourceTree = "<group>"; };
 		C23F4C330A08ECC0D24BA24F /* Pods-BFAstral-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstral-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstral-iOS/Pods-BFAstral-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		C7C7F115F72B8B84D09463FF /* Pods-BFAstral-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstral-watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstral-watchOS/Pods-BFAstral-watchOS.release.xcconfig"; sourceTree = "<group>"; };
 		D50F90F2B7C35B80B2F23CFB /* Pods-BFAstral-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstral-Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstral-Mac/Pods-BFAstral-Mac.debug.xcconfig"; sourceTree = "<group>"; };
 		E8732F9112301B4AE018C256 /* Pods-BFAstralTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFAstralTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BFAstralTests/Pods-BFAstralTests.release.xcconfig"; sourceTree = "<group>"; };
 		EDF3FEF43D54555E0618AB7A /* Pods_BFAstral_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BFAstral_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,14 +108,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6FB622E37E1567D0055DC79 /* Pods_BFAstral_tvOS.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		14292EAF20558D13004AFAE8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B8560C5A984199B983D6E20B /* Pods_BFAstral_watchOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +192,6 @@
 				14393BC42052BC2F00AB57D2 /* BFAstralTests.xctest */,
 				14292E9820558B19004AFAE8 /* BFAstral.framework */,
 				14292EA820558C6A004AFAE8 /* BFAstral.framework */,
-				14292EB820558D13004AFAE8 /* BFAstral.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -281,8 +265,6 @@
 				C23F4C330A08ECC0D24BA24F /* Pods-BFAstral-iOS.release.xcconfig */,
 				2139E2047DC4D9E1089FABBD /* Pods-BFAstral-tvOS.debug.xcconfig */,
 				5EDDC5C2985651AE32F5045A /* Pods-BFAstral-tvOS.release.xcconfig */,
-				5DA46E7B171580CEBFFE6D83 /* Pods-BFAstral-watchOS.debug.xcconfig */,
-				C7C7F115F72B8B84D09463FF /* Pods-BFAstral-watchOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -303,14 +285,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				14292EA220558C6A004AFAE8 /* BFAstral.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		14292EB120558D13004AFAE8 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				14292EB220558D13004AFAE8 /* BFAstral.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,25 +335,6 @@
 			name = "BFAstral-tvOS";
 			productName = BFAstral;
 			productReference = 14292EA820558C6A004AFAE8 /* BFAstral.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		14292EAA20558D13004AFAE8 /* BFAstral-watchOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 14292EB520558D13004AFAE8 /* Build configuration list for PBXNativeTarget "BFAstral-watchOS" */;
-			buildPhases = (
-				14292EAB20558D13004AFAE8 /* [CP] Check Pods Manifest.lock */,
-				14292EAC20558D13004AFAE8 /* Sources */,
-				14292EAF20558D13004AFAE8 /* Frameworks */,
-				14292EB120558D13004AFAE8 /* Headers */,
-				14292EB320558D13004AFAE8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "BFAstral-watchOS";
-			productName = BFAstral;
-			productReference = 14292EB820558D13004AFAE8 /* BFAstral.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		14393BBA2052BC2F00AB57D2 /* BFAstral-iOS */ = {
@@ -439,10 +394,6 @@
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
-					14292EAA20558D13004AFAE8 = {
-						LastSwiftMigration = 1020;
-						ProvisioningStyle = Automatic;
-					};
 					14393BBA2052BC2F00AB57D2 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
@@ -470,7 +421,6 @@
 				14393BBA2052BC2F00AB57D2 /* BFAstral-iOS */,
 				14292E8A20558B19004AFAE8 /* BFAstral-Mac */,
 				14292E9A20558C6A004AFAE8 /* BFAstral-tvOS */,
-				14292EAA20558D13004AFAE8 /* BFAstral-watchOS */,
 				14393BC32052BC2F00AB57D2 /* BFAstralTests */,
 			);
 		};
@@ -485,13 +435,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		14292EA320558C6A004AFAE8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		14292EB320558D13004AFAE8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -551,24 +494,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		14292EAB20558D13004AFAE8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BFAstral-watchOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		19B27D72EB86162F5BC412AA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -610,21 +535,15 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BFAstralTests/Pods-BFAstralTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Astral-iOS11.2/Astral.framework",
-				"${BUILT_PRODUCTS_DIR}/BrightFutures-iOS11.2/BrightFutures.framework",
-				"${BUILT_PRODUCTS_DIR}/Result-iOS11.2/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Astral-iOS/Astral.framework",
+				"${BUILT_PRODUCTS_DIR}/BrightFutures-iOS/BrightFutures.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Astral.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BrightFutures.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -649,15 +568,6 @@
 			files = (
 				14292E9D20558C6A004AFAE8 /* BFDispatcher.swift in Sources */,
 				14292E9E20558C6A004AFAE8 /* BFDispatcherType.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		14292EAC20558D13004AFAE8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				14292EAD20558D13004AFAE8 /* BFDispatcher.swift in Sources */,
-				14292EAE20558D13004AFAE8 /* BFDispatcherType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -808,59 +718,6 @@
 			};
 			name = Release;
 		};
-		14292EB620558D13004AFAE8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DA46E7B171580CEBFFE6D83 /* Pods-BFAstral-watchOS.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = S886WPSL95;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = BFAstral;
-				PRODUCT_MODULE_NAME = BFAstral;
-				PRODUCT_NAME = BFAstral;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.0;
-			};
-			name = Debug;
-		};
-		14292EB720558D13004AFAE8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7C7F115F72B8B84D09463FF /* Pods-BFAstral-watchOS.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = S886WPSL95;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = BFAstral;
-				PRODUCT_MODULE_NAME = BFAstral;
-				PRODUCT_NAME = BFAstral;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.0;
-			};
-			name = Release;
-		};
 		14393BCD2052BC2F00AB57D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -912,7 +769,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -971,7 +828,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -998,13 +855,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BFAstral;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1023,12 +880,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BFAstral;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1082,15 +939,6 @@
 			buildConfigurations = (
 				14292EA620558C6A004AFAE8 /* Debug */,
 				14292EA720558C6A004AFAE8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		14292EB520558D13004AFAE8 /* Build configuration list for PBXNativeTarget "BFAstral-watchOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				14292EB620558D13004AFAE8 /* Debug */,
-				14292EB720558D13004AFAE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,19 +1,18 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-
 def pods
     use_frameworks!
-    pod 'Astral'
+    pod 'Astral', :git => 'https://github.com/hooliooo/Astral.git'
     pod 'BrightFutures'
 end
 
 target 'BFAstral-iOS' do
-    platform :ios, '9.3'
+    platform :ios, '10.0'
     pods
 end
 
 target 'BFAstral-Mac' do
-    platform :macos, '10.11'
+    platform :macos, '10.12'
     pods
 end
 
@@ -22,11 +21,7 @@ target 'BFAstral-tvOS' do
     pods
 end
 
-target 'BFAstral-watchOS' do
-    platform :watchos, '4.0'
-    pods
-end
-
 target 'BFAstralTests' do
+    platform :ios, '10.0'
     pods
 end
