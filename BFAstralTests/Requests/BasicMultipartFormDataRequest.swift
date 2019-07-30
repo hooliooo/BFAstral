@@ -48,4 +48,6 @@ struct BasicMultipartFormDataRequest: MultiPartFormDataRequest {
             file: MultiPartFormDataComponent.File.data(Data())
         )
     ]
+
+    var cachePolicy: URLRequest.CachePolicy?
 }

@@ -28,4 +28,6 @@ struct BasicPostRequest: Request {
     let headers: Set<Header> = [
         Header(key: Header.Key.custom("Get-Request"), value: Header.Value.custom("Yes"))
     ]
+
+    var cachePolicy: URLRequest.CachePolicy?
 }

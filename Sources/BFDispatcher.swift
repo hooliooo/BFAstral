@@ -4,6 +4,8 @@
 //  Licensed under the MIT license. See LICENSE file
 //
 
+import struct Foundation.URL
+import struct Foundation.URLRequest
 import class Foundation.URLSessionTask
 import protocol Astral.Response
 import enum Astral.NetworkingError
@@ -37,14 +39,25 @@ open class BFDispatcher: BaseRequestDispatcher, BFDispatcherType {
     }
 
     /**
-     Creates a URLSessionDataTask from the URLRequest and transforms the Data or Error from the completion handler
-     into a Response or NetworkingError.
+     Creates a URLSessionDataTask from the Request and transforms the Data or Error from the completion handler
+     into a Response or NetworkingError, respectively.
 
      Returns a Future with a Response or NetworkingError.
      - parameter request: The Request instance used to get the Future<Response, NetworkingError> instance.
     */
     open func response(of request: Request) -> Future<Response, NetworkingError> {
+        let urlRequest: URLRequest = self.builder.urlRequest(of: request)
+        return self.response(of: urlRequest)
+    }
 
+    /**
+     Creates a URLSessionDataTask from the URLRequest and transforms the Data or Error from the completion handler
+     into a Response or NetworkingError, respectively.
+
+     Returns a Future with a Response or NetworkingError.
+     - parameter request: The URLRequest instance used to get the Future<Response, NetworkingError> instance.
+    */
+    open func response(of request: URLRequest) -> Future<Response, NetworkingError> {
         return Future(resolver: { [weak self] (callback: @escaping HTTPRequestResult) -> Void in
             self?.response(
                 of: request,
@@ -62,6 +75,18 @@ open class BFDispatcher: BaseRequestDispatcher, BFDispatcherType {
                 }
             )
         })
+    }
+
+    /**
+     Creates a URLSessionDataTask from the URL and transforms the Data or Error from the completion handler
+     into a Response or NetworkingError, respectively.
+
+     Returns a Future with a Response or NetworkingError.
+     - parameter request: The URL instance used to get the Future<Response, NetworkingError> instance.
+    */
+    open func response(of url: URL) -> Future<Response, NetworkingError> {
+        let urlRequest: URLRequest = URLRequest(url: url)
+        return self.response(of: urlRequest)
     }
 
 }
